@@ -38,7 +38,6 @@ public class ModelTest {
 
 		Person person = em.find(Person.class, 1);
 		assertNotNull("Person doesn't exist", person);
-		System.out.println(person.getUser());
 
 	}
 

@@ -28,8 +28,8 @@
 
 	<jdbc:initialize-database data-source="dataSource"
 		ignore-failures="DROPS">
-		<jdbc:script location="classpath:scripts/derby/create-tables.sql" />
-		<jdbc:script location="classpath:scripts/derby/insert-data.sql" />
+		<jdbc:script location="classpath:scripts/h2/create-tables.sql" />
+		<jdbc:script location="classpath:scripts/h2/insert-data.sql" />
 	</jdbc:initialize-database>
 
 </beans>
