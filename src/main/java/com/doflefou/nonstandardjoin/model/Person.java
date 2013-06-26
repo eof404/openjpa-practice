@@ -9,7 +9,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "PERSON_TBL", schema="TEST")
+@Table(name = "PERSON_TBL", schema = "TEST")
 public class Person {
 
 	@Id
@@ -20,8 +20,9 @@ public class Person {
 	private String lastName;
 
 	@OneToOne
-	@JoinColumns({ @JoinColumn(name = "ID", referencedColumnName = "PERSON_ID") })
-	// @JoinColumn(name = "USER_TBL.STATUS", referencedColumnName = "'A'") })
+	@JoinColumns({
+			@JoinColumn(name = "ID", referencedColumnName = "PERSON_ID"),
+			@JoinColumn(name = "USER_TBL.STATUS", referencedColumnName = "'A'") })
 	private User user;
 
 	public Long getId() {

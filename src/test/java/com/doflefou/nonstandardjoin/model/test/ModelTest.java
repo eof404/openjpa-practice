@@ -38,6 +38,7 @@ public class ModelTest {
 
 		Person person = em.find(Person.class, 1);
 		assertNotNull("Person doesn't exist", person);
+		assertNotNull("User doesn't exist", person.getUser());
 
 	}
 

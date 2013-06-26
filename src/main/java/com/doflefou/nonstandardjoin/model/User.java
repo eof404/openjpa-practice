@@ -7,11 +7,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "USER_TBL", schema="TEST")
+
 public class User {
 
 	@Id
 	private Long id;
 	private String userName;
+	
+	
 	private String status;
 	@Column(name = "PERSON_ID")
 	private Long personId;
